@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dice</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="player-0-panel active">
+        <div class="player-name">Player 1</div>
+        <div class="player-score">0</div>
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score">0</div>
+        </div>
+      </div>
+      <div class="center">
+        <button class="btn-new">
+          <ion-icon name="add-circle-outline" class="small-icon"></ion-icon>New
+          Game
+        </button>
+        <img src="img/dice-1.png" alt="dice" class="Dice" />
+        <button class="btn-roll">
+          <ion-icon name="repeat-outline" class="small-icon"></ion-icon>ROLL
+          DICE
+        </button>
+        <button class="btn-hold">
+          <ion-icon name="download-outline" class="small-icon"></ion-icon>HOLD
+        </button>
+        <input
+          type="text"
+          placeholder="Winner score"
+          class="final-score"
+          id="final-score"
+        />
+      </div>
+      <div class="player-1-panel">
+        <div class="player-name">Player 2</div>
+        <div class="player-score">0</div>
+        <div class="player-current-box">
+          <div class="player-current-label">Current</div>
+          <div class="player-current-score">0</div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="scryspt.js"></script>
+  </body>
+</html>
